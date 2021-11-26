@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif; 
+}
+
+.flex {
+    display: flex;
+}
+
+.nav-top {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.bg {
+    object-fit: cover;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.show-links {
+    position: fixed;
+    z-index: 9999;
+    height: 6rem;
+    width: 100vw;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #close-icon {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-right: 3rem;
+  }
+
+  nav {
+    overflow: hidden;
+    height: 0;
+    /*position: relative;*/
+  }
+
+  .nav-items {
+      list-style-type: none;
+      display: flex;
+  }
+
+  .nav-items>li>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 0 0.5rem;
+  }

@@ -120,3 +120,44 @@ a {
 h5 {
     letter-spacing: 5px;
 }
+
+@media screen and (min-width: 700px) {
+    #hamburger, #close-icon{
+        display: none;
+    }
+
+    nav {
+        overflow: visible;
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 3rem;
+        left: 10rem;
+    }
+
+    .nav-items>li>a {
+        color: #fff;
+    }
+
+    .nav-top {
+        justify-content: flex-start;
+        margin: 1.2rem 0 0 4rem;
+    }
+
+    .about-us, .about-product {
+        padding: 4rem 10rem;
+    }
+
+    .about-us h1 {
+        font-size: 27px;
+    }
+  
+  .about-us > p, .about-product p {
+      font-size: 14.5px;
+  }
+
+  h5 {
+      font-size: 14.8px;
+  }
+} 

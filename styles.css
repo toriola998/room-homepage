@@ -121,6 +121,7 @@ h5 {
     letter-spacing: 5px;
 }
 
+
 @media screen and (min-width: 700px) {
     #hamburger, #close-icon{
         display: none;
@@ -160,4 +161,43 @@ h5 {
   h5 {
       font-size: 14.8px;
   }
+
+  body {
+    overflow-x: hidden;
+}
 } 
+
+
+@media screen and (min-width: 1000px) {
+  .grid{
+      display: flex;  
+  }  
+  
+  .bg {
+      width: 63%;
+  }
+  
+  .about-us {
+      padding: 4rem 3rem 2rem 2rem;
+  }
+
+  .bg2, .bg3 {
+      height: 100%;
+      width: 370px;
+  }
+
+  .about-product {
+      padding: 3rem;
+  }
+  
+}
+
+@media screen and (min-width: 1300px) {
+    .about-us {
+        padding: 4rem;
+    }
+
+    .bg {
+        width: 57%;
+    }
+}

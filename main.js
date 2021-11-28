@@ -29,19 +29,18 @@ const info = [
     },
 
    {
-    id: 2,
-    img: "./images/mobile-image-hero-2.jpg",
-    heading: 'We are available all across the globe',
-    product: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today." ,
-},
+        id: 2,
+        img: "./images/mobile-image-hero-2.jpg",
+        heading: 'We are available all across the globe',
+        product: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today." ,
+    },
 
-{   
-    id: 3,
-    img: "./images/mobile-image-hero-3.jpg",
-    heading: 'Manufactured with the best materials',
-    product: " Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
-
-}
+    {   
+        id: 3,
+        img: "./images/mobile-image-hero-3.jpg",
+        heading: 'Manufactured with the best materials',
+        product: " Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
+    }
 ]
 
 const heading = document.querySelector('.about-us h1');
@@ -59,21 +58,24 @@ window.addEventListener('DOMContentLoaded', () => {
     showNext(currentItem)
 })
 
+//show details based on items
 function showNext (each) {
-    const item = info[each]; 
+    const item = info[each];  //variable of each item index info[0]
     image.src = item.img;
     heading.textContent = item.heading;
     productInfo.textContent = item.product;
 }
 
+// show next item
 nextBtn.addEventListener('click', () =>{
     currentItem++;
-    if (currentItem > info.length - 1) {
+    if (currentItem > info.length - 1) {     //when your current item (num of clicks) gets bigger than array lenght, there'll be an error cos no item will be found, then you have to minus 1 from your arrays lenght bacause the lenght will be greater than the index, number starts from 0!  
         currentItem = 0;
     }
     showNext(currentItem)
 })
 
+//show prev item
 prevBtn.addEventListener('click', () =>{
     currentItem--;
     if (currentItem > 0) {

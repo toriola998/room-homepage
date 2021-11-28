@@ -29,6 +29,14 @@ body {
     width: 100%;
 }
 
+.arrow-wrap {
+    background-color: #000;
+    width: 5.5rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
 a {
     text-decoration: none;
 }

@@ -86,6 +86,7 @@ a {
 
   .about-us h1 {
       font-weight: 700;
+    font-size: 1.4rem;
   }
 
 .about-us > p, .about-product p {
@@ -127,6 +128,10 @@ h5 {
         display: none;
     }
 
+    .about-us h1 {
+      font-size: 1.7rem;
+    }
+
     nav {
         overflow: visible;
     }
@@ -149,10 +154,6 @@ h5 {
     .about-us, .about-product {
         padding: 4rem 10rem;
     }
-
-    .about-us h1 {
-        font-size: 27px;
-    }
   
   .about-us > p, .about-product p {
       font-size: 14.5px;
@@ -170,7 +171,8 @@ h5 {
 
 @media screen and (min-width: 1000px) {
   .grid{
-      display: flex;  
+      display: grid;
+      grid-template-columns: auto 600px auto;  
   }  
   
   .bg {
@@ -183,13 +185,16 @@ h5 {
 
   .bg2, .bg3 {
       height: 100%;
-      width: 370px;
+      width: 100%;
   }
 
   .about-product {
       padding: 3rem;
   }
   
+  .flex-tab {
+      display: flex;
+  }
 }
 
 @media screen and (min-width: 1300px) {

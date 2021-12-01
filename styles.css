@@ -182,6 +182,10 @@ h5 {
         width: 70%;
         margin: auto;
     }
+
+    .arrow-wrap-mobile {
+        width: 7rem;
+    }
   
     p {
       font-size: 14.5px;
@@ -249,5 +253,11 @@ h5 {
   
     .about-product {
         padding: 3rem;
-    }   
+    } 
+    
+    .about-us, 
+    .about-product {
+        margin: unset;
+        width: unset;
+    }
 }

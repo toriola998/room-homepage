@@ -179,7 +179,8 @@ h5 {
 
     .about-us, 
     .about-product {
-        padding: 4rem 10rem;
+        width: 70%;
+        margin: auto;
     }
   
     p {
@@ -192,20 +193,38 @@ h5 {
     }
 } 
 
+@media screen and (min-width: 1000px) {
+    .bg {
+        height: 600px;
+    }
+
+    .arrow-wrap-mobile {
+        top: 34.5rem
+    }
+
+    .about-us, 
+    .about-product {
+        padding: 6rem 2rem;
+        width: 60%;
+        margin: auto;
+    }
+} 
 
 @media screen and (min-width: 1300px) {
     .grid{
-        display: grid;
         grid-template-columns: auto 40% auto;  
     }
 
-    .flex-tab {
+    .grid, .flex-tab {
         display: grid;
+    }
+
+    .flex-tab {
         grid-template-columns: 4fr 2fr;
     }
 
     .about-us {
-        padding: unset;
+        padding: 0 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -214,20 +233,18 @@ h5 {
   
     .arrow-wrap-desktop {
         display: flex;
+        left: 0;
+        bottom: 0;
     }
   
     .arrow-wrap-mobile {
         display: none;
     }
   
-    .arrow-wrap-desktop {
-        left: 0;
-        top: 30.4rem;
-    }
-  
-    .bg, .bg2, .bg3 {
+    .bg, 
+    .bg2, 
+    .bg3 {
         height: 100%;
-        width: 100%;
     }
   
     .about-product {

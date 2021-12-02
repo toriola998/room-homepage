@@ -46,8 +46,8 @@ const info = [
 const heading = document.querySelector('.about-us h1');
 const image = document.querySelector('.bg');
 const productInfo = document.querySelector('.about-us p')
-const prevBtn = document.querySelector('#prev-btn');
-const nextBtn = document.querySelector('#next-btn')
+const prevBtn = [...document.querySelectorAll('.prev-btn')]
+const nextBtn = [...document.querySelectorAll('.next-btn')]
 
 //Set starting point
 let currentItem = 0;
@@ -67,19 +67,24 @@ function showNext (each) {
 }
 
 // show next item
-nextBtn.addEventListener('click', () =>{
-    currentItem++;
-    if (currentItem > info.length - 1) {     //when your current item (num of clicks) gets bigger than array lenght, there'll be an error cos no item will be found, then you have to minus 1 from your arrays lenght bacause the lenght will be greater than the index, number starts from 0!  
-        currentItem = 0;
-    }
-    showNext(currentItem)
+
+nextBtn.forEach( (next) => {
+    next.addEventListener('click', () =>{
+        currentItem++;
+        if (currentItem > info.length - 1) {     //when your current item (num of clicks) gets bigger than array lenght, there'll be an error cos no item will be found, then you have to minus 1 from your arrays lenght bacause the lenght will be greater than the index, number starts from 0!  
+            currentItem = 0;
+        }
+        showNext(currentItem)
+    })
 })
 
-//show prev item
-prevBtn.addEventListener('click', () =>{
-    currentItem--;
-    if (currentItem < 0) {
-        currentItem = info.length - 1;
-    }
-    showNext(currentItem)
+prevBtn.forEach( (prev) => {
+    prev.addEventListener('click', () =>{
+        currentItem++;
+        if (currentItem > info.length - 1) {     //when your current item (num of clicks) gets bigger than array lenght, there'll be an error cos no item will be found, then you have to minus 1 from your arrays lenght bacause the lenght will be greater than the index, number starts from 0!  
+            currentItem = 0;
+        }
+        showNext(currentItem)
+    })
 })
+

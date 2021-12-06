@@ -237,15 +237,19 @@ h5 {
   
     .arrow-wrap-desktop {
         display: flex;
-        left: 0;
-        bottom: 0;
+        left: -2.4rem;
+        top: 28.3rem;
     }
   
     .arrow-wrap-mobile {
         display: none;
     }
   
-    .bg, 
+    .bg {
+        height: 500px;
+        width: 96%;
+    }
+
     .bg2, 
     .bg3 {
         height: 100%;
@@ -261,3 +265,15 @@ h5 {
         width: unset;
     }
 }
+
+@media screen and (min-width: 1900px) {
+    .bg {
+        height: 800px;
+        width: 100%;
+    }
+
+    .arrow-wrap-desktop {
+        left: 0;
+        top: 47rem;
+    }
+}  

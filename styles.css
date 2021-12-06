@@ -50,6 +50,7 @@ body {
     position: absolute;
     top: 22rem;
     right: 0;
+    cursor: pointer;
 }
 
 .arrow-wrap-desktop {

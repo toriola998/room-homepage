@@ -148,6 +148,7 @@ h5 {
 @media screen and (min-width: 700px) {
     body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     #hamburger, 
